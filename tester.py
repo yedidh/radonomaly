@@ -22,7 +22,7 @@ def process(path, is_sad=False):
     dataset[np.isnan(dataset)] = 0
     return dataset.astype('float32'), targets
 
-ds = 'ct'
+ds = 'rs'
 is_sad = False
 if ds == 'epsy':
     train_path = 'Epilepsy/Epilepsy_TRAIN.arff'
